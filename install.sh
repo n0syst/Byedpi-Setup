@@ -6,7 +6,7 @@ readonly LOG_FILE="/tmp/${SCRIPT_NAME}.log"
 readonly CONFIG_FILE="$HOME/.config/systemd/user/config.conf"
 readonly BYEDPI_DIR="$HOME/ciadpi"
 readonly TEMP_DIR=$(mktemp -d)
-readonly setup_repo="https://github.com/fatyzzz/Byedpi-Setup/archive/refs/heads/main.zip"
+readonly setup_repo="https://github.com/n0syst/Byedpi-Setup/archive/refs/heads/main.zip"
 
 # Цвета для логирования
 readonly COLOR_GREEN='\e[32m'
@@ -272,7 +272,7 @@ EOF
     cat > "$HOME/.config/systemd/user/ciadpi.service" <<EOF
 [Unit]
 Description=ByeDPI Proxy Service
-Documentation=https://github.com/fatyzzz/Byedpi-Setup
+Documentation=https://github.com/n0syst/Byedpi-Setup
 Wants=network-online.target
 After=network-online.target nss-lookup.target
 
@@ -335,7 +335,7 @@ EOF
         cat > "$HOME/.config/systemd/user/ciadpitest.service" <<EOF
 [Unit]
 Description=ByeDPI Proxy Service
-Documentation=https://github.com/fatyzzz/Byedpi-Setup
+Documentation=https://github.com/n0syst/Byedpi-Setup
 Wants=network-online.target
 After=network-online.target nss-lookup.target
 
@@ -474,7 +474,7 @@ EOF
     # Добавление текста
     echo -e "\e[36m"
     echo "Byedpi-Setup"
-    echo "github.com/fatyzzz/Byedpi-Setup"
+    echo "github.com/n0syst/Byedpi-Setup"
     echo -e "\e[0m"
     sleep 2
     check_dependencies
@@ -633,7 +633,7 @@ EOF
         log yellow "Айпи: 127.0.0.1"
         log yellow "Порт: $port"
     else
-        log green "t.me/fatyzzz"
+        log green "t.me/n0syst"
     fi
 
     # Очистка временных файлов
