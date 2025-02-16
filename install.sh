@@ -616,7 +616,7 @@ EOF
             color="${COLOR_RED}"
         fi
         
-        echo -e "$i) ${color}$setting (Успех: $success_rate%, $success_count/$total_count, Неуспешно: $failed_count)${COLOR_RESET}"
+        echo -e "${color}$setting (Успех: $success_rate%, $success_count/$total_count, Неуспешно: $failed_count)${COLOR_RESET}"
     done
 
     if [[ "$selector" == "1" ]]; then
